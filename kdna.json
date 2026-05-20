@@ -1,0 +1,18 @@
+{
+  "kdna_spec": "0.4",
+  "name": "open_source_project",
+  "version": "0.1.0",
+  "status": "experimental",
+  "access": "open",
+  "language": "en",
+  "author": {
+    "name": "KDNA Team",
+    "id": "kdna-team"
+  },
+  "license": {
+    "type": "CC-BY-4.0"
+  },
+  "keywords": ["open source", "adoption", "developer tools", "repo review", "project growth"],
+  "description": "Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.",
+  "core_insight": "Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better."
+}

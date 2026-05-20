@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "open_source_project",
+    "created": "2026-05-20",
+    "purpose": "Define terminology, common misunderstandings, and self-checks for open-source project judgment.",
+    "load_condition": "Always load with KDNA_Core.json before evaluating open-source project adoption or providing repo feedback."
+  },
+  "terminology": {
+    "standard_terms": [
+      {
+        "term": "value-entry clarity",
+        "definition": "The visitor's ability to answer 'what specific problem does this solve for me' and 'why this over alternatives' within 30 seconds of landing on the project."
+      },
+      {
+        "term": "time-to-first-value",
+        "definition": "The time from discovering the project to experiencing its core value — the moment the user thinks 'I see why this is useful.'"
+      },
+      {
+        "term": "comparison honesty",
+        "definition": "The project's willingness to specify when a user should NOT use it — and which alternative to use instead — as a trust signal."
+      },
+      {
+        "term": "adoption bottleneck",
+        "definition": "The single largest point in the user journey where potential users stop. Usually it is before they read any code."
+      }
+    ],
+    "banned_terms": [
+      {
+        "term": "more documentation",
+        "why": "Suggesting more documentation as a fix for adoption problems assumes users are reaching the documentation. Most are not. The agent must diagnose the value-entry gap before suggesting documentation depth.",
+        "replace_with": "identify where users stop in their journey, and whether the fix is value-entry clarity, first-value speed, or documentation depth"
+      },
+      {
+        "term": "add more features",
+        "why": "More features rarely solve adoption problems. Adoption problems are about value communication and trust, not feature count. A project with 3 features that communicates value clearly will out-adopt a project with 30 features and a confusing README.",
+        "replace_with": "diagnose whether the existing features are clearly communicated before suggesting new ones"
+      }
+    ]
+  },
+  "misunderstandings": [
+    {
+      "id": "misread_stars_measure_quality",
+      "wrong": "A project with few stars is low-quality or not useful.",
+      "correct": "Stars measure distribution and timing, not quality. Many high-quality projects have few stars because they serve a niche, are poorly distributed, or were launched at the wrong time. The agent must evaluate the project's value-entry clarity and code quality — not its star count.",
+      "key_distinction": "Star count = distribution success. Project quality = solves a real problem well. These are different dimensions that may not correlate.",
+      "why": "Agents default to using star count as a quality proxy because it is the only visible metric. This creates a self-reinforcing cycle where low-star projects are dismissed regardless of quality."
+    },
+    {
+      "id": "misread_clean_code_equals_high_adoption",
+      "wrong": "If the code is clean and well-tested, the project should have good adoption.",
+      "correct": "Code quality and adoption have almost no correlation in open source. Adoption is determined by value-entry clarity, distribution channels, network effects, and timing. Clean code is a maintenance advantage, not an adoption driver.",
+      "key_distinction": "Code quality reduces maintenance cost for existing users. Value-entry clarity creates new users. These are different functions with different fixes.",
+      "why": "Developers reviewing projects naturally focus on code quality because it is what they can judge. The agent must redirect attention to the adoption drivers that the developer may be overlooking."
+    }
+  ],
+  "self_check": [
+    "Can a visitor determine the specific problem this project solves within 30 seconds of the README first screen?",
+    "Can a visitor install, run, and see the core value in under 2 minutes?",
+    "Does the project honestly explain when NOT to use it — or does it claim to solve everything?",
+    "Did I avoid suggesting more documentation or more features as fixes before diagnosing the value-entry gap?",
+    "Did I distinguish between code quality issues and adoption issues — and address the right one?"
+  ]
+}
