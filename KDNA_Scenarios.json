@@ -20,8 +20,16 @@
             "state": "Read the README first screen as a first-time visitor. Count the seconds until you understand the value proposition.",
             "need": "A README optimized for 30-second value-entry, not comprehensive description."
           },
-          "action_template": "Time the value-entry test. Read the README first screen and report: how many seconds until the visitor understands the problem and the alternative comparison. If > 30 seconds, this is the adoption bottleneck.",
-          "replace": "Do not suggest more features, more docs, or more promotion. Fix the 30-second value-entry gap first.",
+          "action_template": [
+            "Perform the 30-second value-entry test on the README first screen.",
+            "Report: how many seconds until a visitor understands the problem and alternative comparison.",
+            "If > 30 seconds, identify this as the adoption bottleneck.",
+            "Recommend a rewritten opening that names the specific problem and alternative comparison."
+          ],
+          "replace": [
+            { "avoid": "Suggesting more features, documentation, or promotion", "use": "Fixing the README opening to answer 'what problem does this solve' and 'why this over alternatives' in under 30 seconds" },
+            { "avoid": "Reviewing code quality as a first step", "use": "Evaluating value-entry clarity before reviewing code, tests, or documentation" }
+          ],
           "expected_result": "Visitor converts from 'what is this' to 'I need this' within 30 seconds."
         }
       ]
