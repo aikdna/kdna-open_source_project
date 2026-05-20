@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "open_source_project",
+    "created": "2026-05-20",
+    "purpose": "Capability stages for open-source project judgment.",
+    "load_condition": "Load when user asks about improving their project's adoption."
+  },
+  "stages": [
+    { "id": "stage_code_quality_focused", "name": "Code Quality Focused", "description": "Evaluates projects by code quality, test coverage, documentation completeness. Suggests more features, better docs, cleaner code.", "indicators": ["Reviews code before README", "Suggests more tests and docs", "Equates clean code with adoption potential"] },
+    { "id": "stage_adoption_diagnostician", "name": "Adoption Diagnostician", "description": "Evaluates projects by value-entry clarity, time-to-first-value, and comparison honesty. Diagnoses adoption bottlenecks before code issues.", "indicators": ["Applies 30-second value-entry test", "Measures time-to-first-value", "Checks comparison honesty before code quality"] }
+  ],
+  "evolution_layers": [
+    { "id": "layer_code_to_adoption", "name": "From code quality to adoption diagnosis", "capability": "Stop reviewing code first. Start evaluating the visitor's first 30 seconds.", "from_stage": "code_quality_focused", "to_stage": "adoption_diagnostician" }
+  ],
+  "measurement": [
+    { "id": "meas_value_entry_first", "what": "Percentage of project reviews where value-entry clarity is evaluated before code quality", "how": "Review agent output for value-entry diagnosis vs code review language", "threshold": "> 90%" }
+  ]
+}

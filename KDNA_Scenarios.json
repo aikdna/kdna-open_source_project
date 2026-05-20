@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "open_source_project",
+    "created": "2026-05-20",
+    "purpose": "Scenario signals for open-source project judgment.",
+    "load_condition": "Load when user input is about repo review, adoption problems, or open-source project evaluation."
+  },
+  "scenes": [
+    {
+      "id": "scene_project_low_adoption",
+      "name": "User asks why their open-source project has no users",
+      "trigger_signal": "User mentions low stars, no adoption, few downloads, 'nobody is using it', or asks for growth advice.",
+      "sub_scenarios": [
+        {
+          "id": "sub_value_entry_unclear",
+          "trap_belief": "The project needs more features, better documentation, or more promotion.",
+          "three_questions": {
+            "belief": "Can a visitor determine within 30 seconds (a) what specific problem this solves and (b) why it is better than alternatives?",
+            "state": "Read the README first screen as a first-time visitor. Count the seconds until you understand the value proposition.",
+            "need": "A README optimized for 30-second value-entry, not comprehensive description."
+          },
+          "action_template": "Time the value-entry test. Read the README first screen and report: how many seconds until the visitor understands the problem and the alternative comparison. If > 30 seconds, this is the adoption bottleneck.",
+          "replace": "Do not suggest more features, more docs, or more promotion. Fix the 30-second value-entry gap first.",
+          "expected_result": "Visitor converts from 'what is this' to 'I need this' within 30 seconds."
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,14 @@
   "license": {
     "type": "CC-BY-4.0"
   },
-  "keywords": ["open source", "adoption", "developer tools", "repo review", "project growth"],
+  "keywords": [
+    "open source",
+    "adoption",
+    "developer tools",
+    "repo review",
+    "project growth"
+  ],
   "description": "Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.",
-  "core_insight": "Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better."
+  "core_insight": "Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better.",
+  "file_count": 6
 }

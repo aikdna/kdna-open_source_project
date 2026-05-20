@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "version": "0.4",
+    "domain": "open_source_project",
+    "created": "2026-05-20",
+    "purpose": "Reasoning chains for open-source project adoption.",
+    "load_condition": "Load when user asks why projects fail to gain adoption."
+  },
+  "reasoning_chains": [
+    {
+      "id": "chain_docs_dont_drive_adoption",
+      "one_sentence": "Documentation depth helps existing users. Value-entry clarity creates new users. These are different functions.",
+      "logic": [
+        "A visitor discovering a project does not read documentation — they scan for relevance.",
+        "If the value proposition is unclear in the first 30 seconds, the visitor leaves and never becomes a user.",
+        "Adding more documentation, tutorials, or examples helps users who have already committed — it does nothing for visitors who never committed.",
+        "Therefore, projects with low adoption should optimize value-entry clarity before documentation depth."
+      ],
+      "so_what": "When diagnosing adoption problems, check the README first screen before checking code quality, test coverage, or documentation depth."
+    }
+  ]
+}
