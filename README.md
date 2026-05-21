@@ -10,6 +10,14 @@
 
 Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better.
 
+## Scope
+
+This KDNA helps agents diagnose open-source adoption problems: README value-entry clarity, time-to-first-value, comparison honesty, and adoption bottlenecks.
+
+## Out of Scope
+
+This KDNA is not a code quality analyzer, CI setup guide, maintainer handbook, funding strategy, or general growth marketing playbook. It does not judge implementation correctness.
+
 ## Install
 
 ```bash
