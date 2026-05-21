@@ -1,14 +1,15 @@
 {
   "kdna_spec": "1.0",
   "name": "@aikdna/open_source_project",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "status": "experimental",
   "access": "open",
   "language": "en",
   "author": {
     "name": "KDNA Team",
     "id": "kdna-team",
-    "pubkey": "ed25519:43d22af8f0e189b6fd42bfaab710f52f4bc5f0ae3f5e04719a1a1d9ce9760fbe"
+    "pubkey": "ed25519:43d22af8f0e189b6fd42bfaab710f52f4bc5f0ae3f5e04719a1a1d9ce9760fbe",
+    "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEABYTSKqskFWFgPEykI648/YlhENQJkIZ6bQ6HcznYzKc=\n-----END PUBLIC KEY-----\n"
   },
   "license": {
     "type": "CC-BY-4.0"
@@ -23,5 +24,5 @@
   "description": "Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.",
   "core_insight": "Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better.",
   "file_count": 6,
-  "signature": "ed25519:22fb0fd486ad20f80308c0b349f6590a6acf6b57a2f0493c44a4f513402df8560580f972265e65f41800671fd8f664742c0e1f4da3ea2128e284b5b6de527a08"
+  "signature": "ed25519:f386d92977b569262fd0e30824aefbc573805e1a4fd272336d3086f4323ee076f5180af97e93c6e59ea010ffb233a521b8bc7e2d84cbca1ab10e10d7f7803c06"
 }
