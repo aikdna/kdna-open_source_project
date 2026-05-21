@@ -11,19 +11,75 @@
       "id": "axiom_adoption_is_value_entry_not_documentation",
       "one_sentence": "Adoption failure is usually a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better than alternatives.",
       "full_statement": "When a project has few users, the instinct is to add more documentation, more features, or more examples. But users leave before reading documentation. They leave in the first 30 seconds when they cannot answer two questions: (1) what specific problem does this solve that I actually have? (2) why is this better than what I already use? If the README, website, or repo description does not answer both questions immediately, no amount of documentation depth will matter.",
-      "why": "Agents reviewing projects default to suggesting more tests, better docs, cleaner code. These are visible gaps but they are not the adoption bottleneck. The adoption bottleneck is the value-entry clarity gap — and it happens before any code is read."
+      "why": "Agents reviewing projects default to suggesting more tests, better docs, cleaner code. These are visible gaps but they are not the adoption bottleneck. The adoption bottleneck is the value-entry clarity gap — and it happens before any code is read.",
+      "applies_when": [
+        "A new library has a detailed API reference but the README starts with installation instructions",
+        "A CLI tool has extensive usage documentation but the repo description only says it is a tool for data processing",
+        "An agent is tasked with improving a project's first-time visitor conversion rate",
+        "A web framework lists technical features without stating the specific developer workflow it replaces"
+      ],
+      "does_not_apply_when": [
+        "A mature enterprise framework with an established user base needing advanced configuration guides for complex deployments",
+        "A low-level systems library where the target audience expects dense technical specifications over marketing copy",
+        "A project competing in a monopoly market with no real alternatives to evaluate",
+        "An internal company tool where adoption is mandated by policy and not driven by voluntary evaluation"
+      ],
+      "failure_risk": "The agent will recommend expanding API docs or adding more examples, leaving the actual conversion bottleneck unaddressed and wasting maintainer time on low-impact tasks.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "case_observation",
+        "industry_consensus"
+      ]
     },
     {
       "id": "axiom_comparison_is_trust",
       "one_sentence": "Users trust a project more when it honestly compares itself to alternatives than when it only describes itself.",
       "full_statement": "A project that says 'we are the best X' signals naivety. A project that says 'use us when A, use Y when B, use Z when C — here is the tradeoff table' signals maturity. Honest comparison builds trust because it acknowledges the user's real choice: they are not deciding whether to use this project, they are deciding between this project and the alternative they already know.",
-      "why": "Agents default to describing a project's features positively. This creates a sales pitch, not a decision tool. The user needs to know when NOT to use this project — and if the project cannot answer that, the user assumes it has not thought deeply enough."
+      "why": "Agents default to describing a project's features positively. This creates a sales pitch, not a decision tool. The user needs to know when NOT to use this project — and if the project cannot answer that, the user assumes it has not thought deeply enough.",
+      "applies_when": [
+        "A project is writing a README or landing page for a crowded ecosystem like state management or logging",
+        "An agent is creating onboarding material to help developers choose between competing libraries",
+        "A maintainer is drafting a response to a community discussion comparing the project to a known alternative",
+        "A startup is positioning an open source tool against a well-established incumbent"
+      ],
+      "does_not_apply_when": [
+        "A project in a completely novel domain with no existing alternatives to compare against",
+        "A security-critical library where mentioning third-party tools might inadvertently imply endorsement or compliance risk",
+        "A personal hobby project not intended for production adoption or ecosystem competition",
+        "A highly regulated enterprise product where marketing guidelines forbid direct competitor comparisons"
+      ],
+      "failure_risk": "The agent will generate a feature-dump sales pitch that ignores user decision contexts, causing readers to dismiss the project as naive and stick with their current tool.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "case_observation"
+      ]
     },
     {
       "id": "axiom_minimal_runnable_demo_is_the_real_documentation",
       "one_sentence": "A five-line code example that demonstrates the core value is worth more than fifty pages of API documentation.",
       "full_statement": "Users do not read documentation to learn if a project is relevant. They look for the shortest path to seeing the core value in action. If they cannot copy-paste-run a minimal example in under two minutes, they will move on before reading anything else.",
-      "why": "Agents evaluating projects focus on documentation completeness — is every function documented, are there tutorials, is there a CONTRIBUTING guide. But users evaluate projects by time-to-first-value. The two are unrelated. Complete documentation with a slow first-value path is worse than sparse documentation with an instant first-value path."
+      "why": "Agents evaluating projects focus on documentation completeness — is every function documented, are there tutorials, is there a CONTRIBUTING guide. But users evaluate projects by time-to-first-value. The two are unrelated. Complete documentation with a slow first-value path is worse than sparse documentation with an instant first-value path.",
+      "applies_when": [
+        "Evaluating a new developer tool's repository for onboarding effectiveness",
+        "A project has extensive type documentation but lacks a quickstart script in the root directory",
+        "An agent is auditing a README to reduce developer bounce rate",
+        "A library requires complex environment setup but claims to solve a simple everyday problem"
+      ],
+      "does_not_apply_when": [
+        "A cryptographic library where formal verification and mathematical proofs are the primary value proposition",
+        "An infrastructure-as-code project requiring multi-step cloud provider configuration before any local execution is possible",
+        "A research prototype where exact reproducibility of a published experiment matters more than interactive demonstration",
+        "A hardware driver package where the user interacts with compiled binaries rather than source code"
+      ],
+      "failure_risk": "The agent will prioritize writing exhaustive API references or contribution guides over creating a single runnable snippet, resulting in high bounce rates from developers who cannot verify utility in minutes.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "research_finding",
+        "case_observation"
+      ]
     }
   ],
   "ontology": [

@@ -44,14 +44,46 @@
       "wrong": "A project with few stars is low-quality or not useful.",
       "correct": "Stars measure distribution and timing, not quality. Many high-quality projects have few stars because they serve a niche, are poorly distributed, or were launched at the wrong time. The agent must evaluate the project's value-entry clarity and code quality — not its star count.",
       "key_distinction": "Star count = distribution success. Project quality = solves a real problem well. These are different dimensions that may not correlate.",
-      "why": "Agents default to using star count as a quality proxy because it is the only visible metric. This creates a self-reinforcing cycle where low-star projects are dismissed regardless of quality."
+      "why": "Agents default to using star count as a quality proxy because it is the only visible metric. This creates a self-reinforcing cycle where low-star projects are dismissed regardless of quality.",
+      "applies_when": [
+        "When evaluating a niche infrastructure library with 50 stars but comprehensive documentation and rigorous testing",
+        "When assessing an internal tool open-sourced recently with zero stars but a clear problem-solution fit",
+        "When comparing two similar packages where one has 10k stars due to viral marketing but lacks proper error handling"
+      ],
+      "does_not_apply_when": [
+        "When using star count as a quick heuristic to filter out abandoned or spam repositories on crowded package registries",
+        "When selecting a UI component library where a large community size guarantees plugin ecosystem compatibility",
+        "When measuring public traction for grant funding decisions that explicitly weight viral visibility as a primary criteria"
+      ],
+      "failure_risk": "The agent will dismiss a production-ready and highly secure package as unreliable, causing the user to adopt a bloated or poorly maintained alternative.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "industry_consensus"
+      ]
     },
     {
       "id": "misread_clean_code_equals_high_adoption",
       "wrong": "If the code is clean and well-tested, the project should have good adoption.",
       "correct": "Code quality and adoption have almost no correlation in open source. Adoption is determined by value-entry clarity, distribution channels, network effects, and timing. Clean code is a maintenance advantage, not an adoption driver.",
       "key_distinction": "Code quality reduces maintenance cost for existing users. Value-entry clarity creates new users. These are different functions with different fixes.",
-      "why": "Developers reviewing projects naturally focus on code quality because it is what they can judge. The agent must redirect attention to the adoption drivers that the developer may be overlooking."
+      "why": "Developers reviewing projects naturally focus on code quality because it is what they can judge. The agent must redirect attention to the adoption drivers that the developer may be overlooking.",
+      "applies_when": [
+        "When a maintainer refactors a project to be fully typed and heavily tested but reports stagnant download metrics",
+        "When deciding whether to allocate sprint capacity to architectural improvements versus writing tutorial content",
+        "When analyzing why a technically superior fork fails to gain traction against a messy incumbent"
+      ],
+      "does_not_apply_when": [
+        "When evaluating code for internal team onboarding where readability directly reduces developer ramp-up time",
+        "When assessing a project where poor error handling and lack of tests cause immediate runtime failures that actively deter users",
+        "When choosing a library for a long-term maintained system where future maintenance cost heavily outweighs initial acquisition speed"
+      ],
+      "failure_risk": "The agent will advise spending engineering hours on further refactoring instead of fixing onboarding friction, leading to continued stagnation in user acquisition.",
+      "confidence": "high",
+      "evidence_type": [
+        "practice_pattern",
+        "research_finding"
+      ]
     }
   ],
   "self_check": [
