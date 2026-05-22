@@ -26,5 +26,6 @@
   "file_count": 6,
   "judgment_version": "2026.05",
   "signature": "ed25519:b61dfa1bdae5c37cefb203ce04604cb82f4329a45c7dcb769af5851e46fe2ccd42a5c2f4dde18f129654be82d7df3914213b40326811212bc1ddc58136161309",
-  "quality_badge": "untested"
+  "quality_badge": "untested",
+  "spec_version": "1.0-rc"
 }
