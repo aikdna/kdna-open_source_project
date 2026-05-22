@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.4",
+    "version": "1.0-rc",
     "domain": "open_source_project",
     "created": "2026-05-20",
     "purpose": "Cases showing adoption diagnosis for open-source projects.",
@@ -11,9 +11,9 @@
       "id": "case_great_code_zero_users",
       "title": "Well-engineered library with zero adoption",
       "context": "A developer spent 6 months building a state management library. Clean code, 90% test coverage, comprehensive API docs. 12 stars, 0 dependent repos. The developer is frustrated and considering adding more features.",
-      "what_happened": "Without KDNA, the agent reviews the code and suggests: adding a comparison table, writing tutorials, posting on Reddit. With KDNA, the agent applies the value-entry test: the README starts with 'Lightweight state management for modern applications.' A visitor cannot determine (a) what specific problem this solves that they actually have, or (b) why they should use this instead of Zustand, Redux, or Jotai. The README describes what the library IS but not who it is FOR and what they are currently suffering with. Recommendation: rewrite the README first sentence to name a specific pain point — 'If you have ever [specific pain], this library [specific solution].'",
-      "what_was_learned": "Code quality drives maintenance, not adoption. Adoption is driven by value-entry clarity. The user leaves before reading the code, the docs, or the tutorials — they leave during the first 30 seconds.",
-      "structural_pattern": "excellent_code → low_adoption → value_entry_unclear → visitor_leaves_before_code → fix_entry_not_code"
+      "what_happened": "Without KDNA, the agent reviews the code and suggests: adding a comparison table, writing tutorials, posting on Reddit. With KDNA, the agent applies the value-entry test: the README starts with 'Lightweight state management for modern applications.' A visitor cannot determine (a) what specific problem this solves that they actually have, or (b) why they should use this instead of Zustand, Redux, or Jotai. The README describes what the library IS but not who it is FOR and what they are currently suffering with. Recommendation: rewrite the README first sentence to name a specific pain point \u2014 'If you have ever [specific pain], this library [specific solution].'",
+      "what_was_learned": "Code quality drives maintenance, not adoption. Adoption is driven by value-entry clarity. The user leaves before reading the code, the docs, or the tutorials \u2014 they leave during the first 30 seconds.",
+      "structural_pattern": "excellent_code \u2192 low_adoption \u2192 value_entry_unclear \u2192 visitor_leaves_before_code \u2192 fix_entry_not_code"
     }
   ]
 }

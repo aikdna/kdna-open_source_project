@@ -2,26 +2,29 @@
 
 # kdna-open_source_project
 
-[![KDNA Spec](https://img.shields.io/badge/KDNA-v0.4-4c1)](https://github.com/knowledge-dna/KDNA)
+[![KDNA Spec](https://img.shields.io/badge/KDNA-v1.0--rc-4c1)](https://github.com/knowledge-dna/KDNA)
 
-**open_source_project** — Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.
+**Open Source Project** — Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.
 
-## Core Insight
+## Four Questions
+
+### 1. What does this domain judge?
+
+Encode open-source project judgment so AI diagnoses why a project is not gaining adoption — the root cause is almost always a value-entry problem, not a documentation or feature gap.
+
+### 2. When does it load?
+
+Load when evaluating an open-source project's adoption, reviewing a repo for improvement, or diagnosing why a project is not being used.
+
+### 3. What is the core judgment?
 
 Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better.
 
-## Scope
-
-This KDNA helps agents diagnose open-source adoption problems: README value-entry clarity, time-to-first-value, comparison honesty, and adoption bottlenecks.
-
-## Out of Scope
-
-This KDNA is not a code quality analyzer, CI setup guide, maintainer handbook, funding strategy, or general growth marketing playbook. It does not judge implementation correctness.
-
-## Install
+### 4. How do I use it?
 
 ```bash
 kdna install github:knowledge-dna/kdna-open_source_project
+kdna validate .
 ```
 
 ## Files
@@ -35,12 +38,7 @@ kdna install github:knowledge-dna/kdna-open_source_project
 | KDNA_Reasoning.json | Reasoning chains: conclusion → logic → so_what |
 | KDNA_Evolution.json | Capability stages, measurable indicators, growth paths |
 | kdna.json | Domain manifest |
-
-## Validate
-
-```bash
-kdna validate .
-```
+| evals/ | Evaluation cases (quality: untested) |
 
 ## License
 

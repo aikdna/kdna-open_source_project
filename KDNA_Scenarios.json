@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.4",
+    "version": "1.0-rc",
     "domain": "open_source_project",
     "created": "2026-05-20",
     "purpose": "Scenario signals for open-source project judgment.",
@@ -27,8 +27,14 @@
             "Recommend a rewritten opening that names the specific problem and alternative comparison."
           ],
           "replace": [
-            { "avoid": "Suggesting more features, documentation, or promotion", "use": "Fixing the README opening to answer 'what problem does this solve' and 'why this over alternatives' in under 30 seconds" },
-            { "avoid": "Reviewing code quality as a first step", "use": "Evaluating value-entry clarity before reviewing code, tests, or documentation" }
+            {
+              "avoid": "Suggesting more features, documentation, or promotion",
+              "use": "Fixing the README opening to answer 'what problem does this solve' and 'why this over alternatives' in under 30 seconds"
+            },
+            {
+              "avoid": "Reviewing code quality as a first step",
+              "use": "Evaluating value-entry clarity before reviewing code, tests, or documentation"
+            }
           ],
           "expected_result": "Visitor converts from 'what is this' to 'I need this' within 30 seconds."
         }

@@ -21,7 +21,7 @@
     "repo review",
     "project growth"
   ],
-  "description": "Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.",
+  "description": "Open-source project judgment \u2014 diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.",
   "core_insight": "Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better.",
   "file_count": 6,
   "judgment_version": "2026.05",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.4",
+    "version": "1.0-rc",
     "domain": "open_source_project",
     "created": "2026-05-20",
     "purpose": "Define terminology, common misunderstandings, and self-checks for open-source project judgment.",
@@ -14,11 +14,11 @@
       },
       {
         "term": "time-to-first-value",
-        "definition": "The time from discovering the project to experiencing its core value — the moment the user thinks 'I see why this is useful.'"
+        "definition": "The time from discovering the project to experiencing its core value \u2014 the moment the user thinks 'I see why this is useful.'"
       },
       {
         "term": "comparison honesty",
-        "definition": "The project's willingness to specify when a user should NOT use it — and which alternative to use instead — as a trust signal."
+        "definition": "The project's willingness to specify when a user should NOT use it \u2014 and which alternative to use instead \u2014 as a trust signal."
       },
       {
         "term": "adoption bottleneck",
@@ -42,7 +42,7 @@
     {
       "id": "misread_stars_measure_quality",
       "wrong": "A project with few stars is low-quality or not useful.",
-      "correct": "Stars measure distribution and timing, not quality. Many high-quality projects have few stars because they serve a niche, are poorly distributed, or were launched at the wrong time. The agent must evaluate the project's value-entry clarity and code quality — not its star count.",
+      "correct": "Stars measure distribution and timing, not quality. Many high-quality projects have few stars because they serve a niche, are poorly distributed, or were launched at the wrong time. The agent must evaluate the project's value-entry clarity and code quality \u2014 not its star count.",
       "key_distinction": "Star count = distribution success. Project quality = solves a real problem well. These are different dimensions that may not correlate.",
       "why": "Agents default to using star count as a quality proxy because it is the only visible metric. This creates a self-reinforcing cycle where low-star projects are dismissed regardless of quality.",
       "applies_when": [
@@ -89,8 +89,8 @@
   "self_check": [
     "Can a visitor determine the specific problem this project solves within 30 seconds of the README first screen?",
     "Can a visitor install, run, and see the core value in under 2 minutes?",
-    "Does the project honestly explain when NOT to use it — or does it claim to solve everything?",
+    "Does the project honestly explain when NOT to use it \u2014 or does it claim to solve everything?",
     "Did I avoid suggesting more documentation or more features as fixes before diagnosing the value-entry gap?",
-    "Did I distinguish between code quality issues and adoption issues — and address the right one?"
+    "Did I distinguish between code quality issues and adoption issues \u2014 and address the right one?"
   ]
 }

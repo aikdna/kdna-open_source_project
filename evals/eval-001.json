@@ -1,0 +1,14 @@
+{
+  "id": "eval-001",
+  "domain": "@aikdna/open_source_project",
+  "input": "An open-source CLI tool has low adoption. Its README starts with installation instructions and lists all available commands and flags. The repo description says 'A tool for data processing.' There is no sentence stating what specific problem it solves or how it compares to alternatives like jq or awk.",
+  "expected_classification": "VALUE_ENTRY_GAP",
+  "expected_axioms": [
+    "axiom_adoption_is_value_entry_not_documentation",
+    "axiom_comparison_is_trust",
+    "axiom_minimal_runnable_demo_is_the_real_documentation"
+  ],
+  "output_rubric": "Agent must: (1) diagnose adoption failure as value-entry problem, not documentation depth problem, (2) identify that a visitor cannot determine what specific problem this solves or why it is better than alternatives in 30 seconds, (3) not recommend adding more docs/examples as the primary fix. Failure if agent suggests expanding API docs or adding more features instead of fixing value-entry clarity.",
+  "pass": null,
+  "evidence": ""
+}
