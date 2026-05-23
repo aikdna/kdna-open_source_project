@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_008",
+  "domain": "@aikdna/open_source_project",
+  "input": "Users say 'looks cool' but never come back. Why?",
+  "expected_classification": "no_retention_hook",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as no_retention_hook and apply axiom value_entry_clarity."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_002",
+  "domain": "@aikdna/open_source_project",
+  "input": "Our open source library has 2 stars after 6 months. Why?",
+  "expected_classification": "value_entry_failure",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as value_entry_failure and apply axiom value_entry_clarity."
+}

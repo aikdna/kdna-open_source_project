@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_009",
+  "domain": "@aikdna/open_source_project",
+  "input": "How to make our landing page convert visitors to users?",
+  "expected_classification": "clarity_optimization",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as clarity_optimization and apply axiom value_entry_clarity."
+}

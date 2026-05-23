@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_007",
+  "domain": "@aikdna/open_source_project",
+  "input": "We launched on HN and got traffic but zero users.",
+  "expected_classification": "value_clarity",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as value_clarity and apply axiom value_entry_clarity."
+}

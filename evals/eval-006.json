@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_006",
+  "domain": "@aikdna/open_source_project",
+  "input": "How do I explain what my project does in one sentence?",
+  "expected_classification": "positioning",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as positioning and apply axiom value_entry_clarity."
+}

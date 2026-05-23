@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_010",
+  "domain": "@aikdna/open_source_project",
+  "input": "Should we add more features or improve docs first?",
+  "expected_classification": "adoption_priority",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as adoption_priority and apply axiom value_entry_clarity."
+}

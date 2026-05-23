@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_011",
+  "domain": "@aikdna/open_source_project",
+  "input": "What's the minimum README that proves value in 30 seconds?",
+  "expected_classification": "minimum_viable_positioning",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as minimum_viable_positioning and apply axiom value_entry_clarity."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_004",
+  "domain": "@aikdna/open_source_project",
+  "input": "People star our repo but never install. Diagnose.",
+  "expected_classification": "clarity_gap",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as clarity_gap and apply axiom value_entry_clarity."
+}

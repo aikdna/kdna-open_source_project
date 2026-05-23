@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_003",
+  "domain": "@aikdna/open_source_project",
+  "input": "How to improve our GitHub README for adoption?",
+  "expected_classification": "entry_point_fix",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as entry_point_fix and apply axiom value_entry_clarity."
+}

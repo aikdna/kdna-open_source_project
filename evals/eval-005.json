@@ -1,0 +1,10 @@
+{
+  "id": "eval_open_source_project_005",
+  "domain": "@aikdna/open_source_project",
+  "input": "Competitor has worse code but 10x our adoption. Why?",
+  "expected_classification": "value_communication",
+  "expected_axioms": [
+    "value_entry_clarity"
+  ],
+  "output_rubric": "Agent should classify this as value_communication and apply axiom value_entry_clarity."
+}
