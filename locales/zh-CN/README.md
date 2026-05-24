@@ -18,4 +18,4 @@
 - 许可证合规
 - 社区管理
 
-详见英文原版：[README.md](https://github.com/knowledge-dna/kdna-open_source_project)
+详见英文原版：[README.md](https://github.com/aikdna/kdna-open_source_project)
