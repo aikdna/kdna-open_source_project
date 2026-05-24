@@ -2,7 +2,7 @@
 
 # kdna-open_source_project
 
-[![KDNA Spec](https://img.shields.io/badge/KDNA-v1.0--rc-4c1)](https://github.com/knowledge-dna/KDNA)
+[![KDNA Spec](https://img.shields.io/badge/KDNA-v1.0--rc-4c1)](https://github.com/aikdna/KDNA)
 
 **Open Source Project** — Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.
 
@@ -23,7 +23,7 @@ Adoption failure is a value-entry problem: visitors cannot determine in 30 secon
 ### 4. How do I use it?
 
 ```bash
-kdna install github:knowledge-dna/kdna-open_source_project
+kdna install github:aikdna/kdna-open_source_project
 kdna validate .
 ```
 
