@@ -1,44 +1,64 @@
 > 🧬 [aikdna.com](https://aikdna.com) — Official website
 
-# kdna-open_source_project
+# @aikdna/open_source_project
 
 [![KDNA Spec](https://img.shields.io/badge/KDNA-v1.0--rc-4c1)](https://github.com/aikdna/KDNA)
 
-**Open Source Project** — Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.
+**Open-source project judgment** — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.
 
-## Four Questions
+## What this KDNA changes
 
-### 1. What does this domain judge?
+**Before loading this KDNA, an agent tends to:**
+- Suggest improving documentation, adding features, or better marketing
+- Treat adoption failure as a feature gap
 
-Encode open-source project judgment so AI diagnoses why a project is not gaining adoption — the root cause is almost always a value-entry problem, not a documentation or feature gap.
+**After loading this KDNA, an agent will judge:**
+- Can a visitor determine in 30 seconds what problem this solves?
+- Why is this project better than alternatives?
+- Is the value-entry path clear and immediate?
+- Is time-to-first-value measured and minimized?
 
-### 2. When does it load?
+## This KDNA is for
 
-Load when evaluating an open-source project's adoption, reviewing a repo for improvement, or diagnosing why a project is not being used.
+- Evaluating open-source project adoption
+- Reviewing a repo for improvement
+- Diagnosing why a project is not being used
 
-### 3. What is the core judgment?
+## This KDNA is not for
+
+- Code quality analysis
+- CI/CD setup or maintainer handbooks
+- Funding strategy or growth marketing
+- Implementation correctness evaluation
+
+## Core judgment
 
 Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better.
 
-### 4. How do I use it?
+## Self-checks
+
+- Can a first-time visitor understand the value in 30 seconds?
+- Is the comparison to alternatives honest and clear?
+- Is time-to-first-value measurable?
+- Is the project solving a real problem or just showcasing technology?
+
+## Install
 
 ```bash
-kdna install github:aikdna/kdna-open_source_project
+kdna install @aikdna/open_source_project
 kdna validate .
 ```
 
 ## Files
 
-| File | Purpose |
-|------|---------|
-| KDNA_Core.json | Axioms, ontology, frameworks, core causal structure, stances |
-| KDNA_Patterns.json | Terminology, banned terms, misunderstandings, self-checks |
-| KDNA_Scenarios.json | Scenario signals that should shift strategy |
-| KDNA_Cases.json | Concrete cases showing structure rather than scripts |
-| KDNA_Reasoning.json | Reasoning chains: conclusion → logic → so_what |
-| KDNA_Evolution.json | Capability stages, measurable indicators, growth paths |
-| kdna.json | Domain manifest |
-| evals/ | Evaluation cases (quality: untested) |
+- `KDNA_Core.json` — Axioms, ontology, frameworks, causal structure, stances
+- `KDNA_Patterns.json` — Terminology, banned terms, misunderstandings, self-checks
+- `KDNA_Scenarios.json` — Scenario signals that shift strategy
+- `KDNA_Cases.json` — Concrete cases showing judgment structure
+- `KDNA_Reasoning.json` — Reasoning chains: conclusion → logic → action
+- `KDNA_Evolution.json` — Capability stages, measurable indicators, growth paths
+- `evals/` — Evaluation cases (quality: untested)
+- `kdna.json` — Domain manifest
 
 ## License
 
