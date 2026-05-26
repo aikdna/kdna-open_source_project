@@ -46,7 +46,7 @@ Adoption failure is a value-entry problem: visitors cannot determine in 30 secon
 
 ```bash
 kdna install @aikdna/open_source_project
-kdna validate .
+kdna dev validate .
 ```
 
 ## Files
