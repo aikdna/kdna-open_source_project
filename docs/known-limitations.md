@@ -1,24 +1,36 @@
 # Known Limitations
 
 This document declares known limitations of the kdna-open_source_project domain judgment package.
-This is required by the [KDNA Governance Policy](https://github.com/aikdna/KDNA/blob/main/GOVERNANCE.md).
+This is required by the [KDNA Governance Policy](https://github.com/aikdna/kdna/blob/main/docs/GOVERNANCE.md).
 
 ## Scope Limitations
-- This domain's judgment is bounded to its declared field: open_source_project.
-- The axioms, signals, and self-checks are designed for the current version of this domain.
-  They may not generalize to adjacent fields without adaptation.
+- This domain supports judgment about open-source project readiness: public
+  positioning, developer onboarding, governance, contribution paths, release
+  hygiene, trust signals, and ecosystem fit.
+- It is not a general startup strategy model, fundraising model, internal tooling
+  checklist, enterprise procurement guide, or substitute for legal licensing advice.
+- It should not be used to force open-source framing onto private products,
+  research prototypes, internal tools, or projects with no intended external
+  contributor surface.
 
 ## Content Limitations
-- Not all edge cases in this field are covered. Domain expertise is encoded as structured
-  principles, not as exhaustive rule sets.
-- The quality badge reflects current evaluation data. As evaluation methodology improves,
-  quality badges may be revised.
+- The domain can flag ecosystem-readiness gaps, but it cannot prove market demand,
+  contributor interest, security maturity, or long-term maintainer capacity.
+- It may underperform for projects governed by foundation rules, regulated-sector
+  constraints, dual-use security concerns, or company-specific open-source policy.
+- It does not replace user interviews, contributor support data, license review,
+  security review, or release engineering evidence.
+- The quality badge reflects current evaluation data. As evaluation methodology
+  improves, quality badges may be revised.
 
 ## Technical Limitations
-- KDNA provides judgment context, not execution. The agent using this domain is responsible
-  for correct application.
-- Domain conflicts are reported but not automatically resolved. When multiple domains
-  apply to the same task, the agent must navigate conflicting guidance.
+- KDNA provides judgment context, not repository automation. The host agent still
+  needs actual repo inspection, CI status, package metadata, issue history, and
+  release artifacts where available.
+- If composed with security, legal, product, or documentation KDNAs, this domain
+  should expose tradeoffs rather than silently optimize for community growth.
+- It cannot certify a project as production-ready without external evidence such
+  as adoption data, vulnerability handling, release cadence, and maintainer review.
 
 ## Review Status
 Current review status and quality badge are defined in the registry entry.
