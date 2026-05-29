@@ -1,10 +1,25 @@
 {
-  "kdna_spec": "1.0-rc",
+  "format": "kdna",
+  "format_version": "1.0",
+  "spec_version": "1.0-rc",
   "name": "@aikdna/open_source_project",
-  "version": "0.7.5",
+  "version": "0.7.6",
+  "asset_type": "domain_judgment",
   "status": "experimental",
   "access": "open",
-  "language": "en",
+  "privacy_level": "public",
+  "media_type": "application/vnd.aikdna.kdna+zip",
+  "created": "2026-05-20",
+  "updated": "2026-05-29",
+  "description": "Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.",
+  "core_insight": "Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better.",
+  "keywords": [
+    "open source",
+    "adoption",
+    "developer tools",
+    "repo review",
+    "project growth"
+  ],
   "author": {
     "name": "KDNA Team",
     "id": "kdna-team",
@@ -14,18 +29,11 @@
   "license": {
     "type": "CC-BY-4.0"
   },
-  "keywords": [
-    "open source",
-    "adoption",
-    "developer tools",
-    "repo review",
-    "project growth"
-  ],
-  "description": "Open-source project judgment — diagnose why a project is not gaining adoption. The root cause is usually value-entry clarity, not documentation or feature gaps.",
-  "core_insight": "Adoption failure is a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better.",
+  "registry": {
+    "repo": "https://github.com/aikdna/kdna-open_source_project"
+  },
   "file_count": 6,
   "judgment_version": "2026.05",
-  "signature": "ed25519:b61dfa1bdae5c37cefb203ce04604cb82f4329a45c7dcb769af5851e46fe2ccd42a5c2f4dde18f129654be82d7df3914213b40326811212bc1ddc58136161309",
   "quality_badge": "tested",
   "languages": [
     "en",
@@ -33,5 +41,29 @@
   ],
   "default_language": "en",
   "i18n_level": "L2",
-  "risk_level": "R0"
+  "risk_level": "R0",
+  "fitness_for_purpose": {
+    "intended_use": [
+      "open-source repository review",
+      "developer onboarding diagnosis",
+      "adoption and positioning assessment"
+    ],
+    "not_for": [
+      "security audit",
+      "legal license review",
+      "guaranteed growth or community strategy prediction"
+    ],
+    "requires_human_review_when": [
+      "recommendations will change public project positioning or README claims",
+      "the project serves a regulated, security-critical, or deeply technical audience",
+      "the maintainer has explicit goals other than adoption"
+    ],
+    "known_failure_modes": [
+      "over-applying adoption framing to personal or research projects",
+      "undervaluing deep technical documentation for expert-only audiences",
+      "mistaking low adoption for poor value-entry when distribution is the real bottleneck"
+    ]
+  },
+  "content_digest": "sha256:fa7923c07e92edf030f06ab34a40b979bec9d9a01f08c06e1fdfb4d73bb2889f",
+  "signature": "ed25519:0cd7fe668c8a53cc35c94c94687240f13ba423e46f7b1264e40c7f8df04971edd1d594fb26b69a419c8c2bc35473f6fda9e4b023e47e2926e3bc9965d7cde501"
 }

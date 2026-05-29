@@ -3,7 +3,7 @@
     "version": "1.0-rc",
     "domain": "open_source_project",
     "created": "2026-05-20",
-    "purpose": "Encode open-source project judgment so AI diagnoses why a project is not gaining adoption \u2014 the root cause is almost always a value-entry problem, not a documentation or feature gap.",
+    "purpose": "Encode open-source project judgment so AI diagnoses why a project is not gaining adoption — the root cause is almost always a value-entry problem, not a documentation or feature gap.",
     "load_condition": "Load when evaluating an open-source project's adoption, reviewing a repo for improvement, or diagnosing why a project is not being used."
   },
   "axioms": [
@@ -11,7 +11,7 @@
       "id": "axiom_adoption_is_value_entry_not_documentation",
       "one_sentence": "Adoption failure is usually a value-entry problem: visitors cannot determine in 30 seconds what problem this solves and why it is better than alternatives.",
       "full_statement": "When a project has few users, the instinct is to add more documentation, more features, or more examples. But users leave before reading documentation. They leave in the first 30 seconds when they cannot answer two questions: (1) what specific problem does this solve that I actually have? (2) why is this better than what I already use? If the README, website, or repo description does not answer both questions immediately, no amount of documentation depth will matter.",
-      "why": "Agents reviewing projects default to suggesting more tests, better docs, cleaner code. These are visible gaps but they are not the adoption bottleneck. The adoption bottleneck is the value-entry clarity gap \u2014 and it happens before any code is read.",
+      "why": "Agents reviewing projects default to suggesting more tests, better docs, cleaner code. These are visible gaps but they are not the adoption bottleneck. The adoption bottleneck is the value-entry clarity gap — and it happens before any code is read.",
       "applies_when": [
         "A new library has a detailed API reference but the README starts with installation instructions",
         "A CLI tool has extensive usage documentation but the repo description only says it is a tool for data processing",
@@ -30,13 +30,24 @@
         "practice_pattern",
         "case_observation",
         "industry_consensus"
-      ]
+      ],
+      "status": "locked",
+      "human_lock": {
+        "by": "KDNA Team",
+        "at": "2026-05-29",
+        "statement": "Reviewed and locked for official open_source_project asset republish. Applies_when, does_not_apply_when, and failure_risk are intentional judgment boundaries.",
+        "checked": {
+          "applies_when": true,
+          "does_not_apply_when": true,
+          "failure_risk": true
+        }
+      }
     },
     {
       "id": "axiom_comparison_is_trust",
       "one_sentence": "Users trust a project more when it honestly compares itself to alternatives than when it only describes itself.",
-      "full_statement": "A project that says 'we are the best X' signals naivety. A project that says 'use us when A, use Y when B, use Z when C \u2014 here is the tradeoff table' signals maturity. Honest comparison builds trust because it acknowledges the user's real choice: they are not deciding whether to use this project, they are deciding between this project and the alternative they already know.",
-      "why": "Agents default to describing a project's features positively. This creates a sales pitch, not a decision tool. The user needs to know when NOT to use this project \u2014 and if the project cannot answer that, the user assumes it has not thought deeply enough.",
+      "full_statement": "A project that says 'we are the best X' signals naivety. A project that says 'use us when A, use Y when B, use Z when C — here is the tradeoff table' signals maturity. Honest comparison builds trust because it acknowledges the user's real choice: they are not deciding whether to use this project, they are deciding between this project and the alternative they already know.",
+      "why": "Agents default to describing a project's features positively. This creates a sales pitch, not a decision tool. The user needs to know when NOT to use this project — and if the project cannot answer that, the user assumes it has not thought deeply enough.",
       "applies_when": [
         "A project is writing a README or landing page for a crowded ecosystem like state management or logging",
         "An agent is creating onboarding material to help developers choose between competing libraries",
@@ -54,13 +65,24 @@
       "evidence_type": [
         "practice_pattern",
         "case_observation"
-      ]
+      ],
+      "status": "locked",
+      "human_lock": {
+        "by": "KDNA Team",
+        "at": "2026-05-29",
+        "statement": "Reviewed and locked for official open_source_project asset republish. Applies_when, does_not_apply_when, and failure_risk are intentional judgment boundaries.",
+        "checked": {
+          "applies_when": true,
+          "does_not_apply_when": true,
+          "failure_risk": true
+        }
+      }
     },
     {
       "id": "axiom_minimal_runnable_demo_is_the_real_documentation",
       "one_sentence": "A five-line code example that demonstrates the core value is worth more than fifty pages of API documentation.",
       "full_statement": "Users do not read documentation to learn if a project is relevant. They look for the shortest path to seeing the core value in action. If they cannot copy-paste-run a minimal example in under two minutes, they will move on before reading anything else.",
-      "why": "Agents evaluating projects focus on documentation completeness \u2014 is every function documented, are there tutorials, is there a CONTRIBUTING guide. But users evaluate projects by time-to-first-value. The two are unrelated. Complete documentation with a slow first-value path is worse than sparse documentation with an instant first-value path.",
+      "why": "Agents evaluating projects focus on documentation completeness — is every function documented, are there tutorials, is there a CONTRIBUTING guide. But users evaluate projects by time-to-first-value. The two are unrelated. Complete documentation with a slow first-value path is worse than sparse documentation with an instant first-value path.",
       "applies_when": [
         "Evaluating a new developer tool's repository for onboarding effectiveness",
         "A project has extensive type documentation but lacks a quickstart script in the root directory",
@@ -79,20 +101,31 @@
         "practice_pattern",
         "research_finding",
         "case_observation"
-      ]
+      ],
+      "status": "locked",
+      "human_lock": {
+        "by": "KDNA Team",
+        "at": "2026-05-29",
+        "statement": "Reviewed and locked for official open_source_project asset republish. Applies_when, does_not_apply_when, and failure_risk are intentional judgment boundaries.",
+        "checked": {
+          "applies_when": true,
+          "does_not_apply_when": true,
+          "failure_risk": true
+        }
+      }
     }
   ],
   "ontology": [
     {
       "id": "value_entry_clarity",
       "one_sentence": "The visitor's ability to answer 'what problem does this solve for me' and 'why this over alternatives' within 30 seconds of landing on the project.",
-      "essence": "It is not about a good tagline. It is about specificity: this project solves THIS problem for THIS person who is currently doing THIS. The more specific, the faster the match. The more generic, the slower the match \u2014 and the visitor leaves before matching.",
+      "essence": "It is not about a good tagline. It is about specificity: this project solves THIS problem for THIS person who is currently doing THIS. The more specific, the faster the match. The more generic, the slower the match — and the visitor leaves before matching.",
       "boundary": "It is not about feature lists, architecture descriptions, or philosophical mission statements. These inform users who have already decided to care. Value-entry clarity is for users who have not yet decided.",
       "trigger_signal": "The README first paragraph describes what the project IS (a framework, a library, a tool) but not who it is FOR and what they are currently doing that is painful."
     },
     {
       "id": "time_to_first_value",
-      "one_sentence": "The time from discovering the project to experiencing its core value \u2014 measured in minutes, not features.",
+      "one_sentence": "The time from discovering the project to experiencing its core value — measured in minutes, not features.",
       "essence": "The shortest possible path: install, run one example, see the value. If this path takes more than two minutes, the project is losing most of its potential users before they reach the value demonstration.",
       "boundary": "It is not setup time, onboarding flow, or configuration complexity. It is specifically the time to the moment the user thinks 'I see why this is useful.' Before that moment, everything is friction.",
       "trigger_signal": "The README's Quick Start section requires more than 3 steps before the user sees output that demonstrates the core value proposition."
@@ -106,7 +139,7 @@
       "steps": [
         "Value-entry test: can a visitor determine the specific problem and the specific alternative comparison in 30 seconds from the README first screen?",
         "First-value test: can a visitor install, run, and see the core value in under 2 minutes? If not, what is the bottleneck?",
-        "Comparison test: does the project honestly compare itself to alternatives \u2014 including when NOT to use it? If absent, this is a trust gap.",
+        "Comparison test: does the project honestly compare itself to alternatives — including when NOT to use it? If absent, this is a trust gap.",
         "Only after these three pass: evaluate documentation depth, test coverage, code quality, and feature completeness."
       ]
     }
@@ -115,7 +148,7 @@
     {
       "from": "low_adoption",
       "to": "value_entry_unclear",
-      "via": "visitor cannot determine specific problem and alternative comparison in 30 seconds \u2014 leaves before reading anything else"
+      "via": "visitor cannot determine specific problem and alternative comparison in 30 seconds — leaves before reading anything else"
     },
     {
       "from": "user_adds_more_documentation",
@@ -125,7 +158,7 @@
     {
       "from": "project_describes_features",
       "to": "visitor_cannot_choose",
-      "via": "features describe what the project does, not what problem it solves \u2014 the visitor needs the problem statement to match their own situation"
+      "via": "features describe what the project does, not what problem it solves — the visitor needs the problem statement to match their own situation"
     }
   ],
   "stances": [
